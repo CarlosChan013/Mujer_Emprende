@@ -8,13 +8,13 @@
 </head>
 <body>
 <!---------------------------- Header ----------------------------------->
-<?php include('../Include/Header.html'); ?>
+<?php include('../../Include/Header.html'); ?>
 <!-- Este es el formulario para registrar nuestra cuenta mandamos los datos con el metodo POST lo mandamos a
 Registro/Registro_cuenta -->
     <section>
-    <form action="../Registro_y_login/Registro_cuenta.php" method="POST">
+    <form action="../../Registro_y_login/Registro_proveedora.php" method="POST">
             
-              <h1>Registro usuari@s</h1>
+             <h1>Registro proveedor@s</h1>
               <div >
                 <h2>Ingresar su nombre(s)</h2>
                 <input type="text" placeholder="Nombre" required autocomplete="off" name="Nombre"/>
@@ -32,10 +32,10 @@ Registro/Registro_cuenta -->
             <!------------------------------------------------------------------------->
             <div >
                 <h2>Ingresar su nombre de usuario</h2>
-                <input type="text" placeholder= "Usuario " required autocomplete="off" name="Usuario"/>
+                <input type="text" placeholder= "Usuario" required autocomplete="off" name="Usuario"/>
             </div>
               <!------------------------------------------------------------------------>
-            <button type="submit" class="button button-block" value="Insertarcuenta" name="enviar" />registrarme</button>
+            <button type="submit" class="button button-block" value="$Insertarcuenta" name="enviar" />registrarme</button>
             
             </form>
   

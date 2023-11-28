@@ -25,13 +25,13 @@ if(isset($_POST['iniciar_sesion'])) {
                 // Redirecciona según el rol
                 switch($row['Rol']) {
                     case 1:
-                        header("Location: admin.php");
+                        header("Location: ../Views/Private/Dashboard.php");
                         break;
                     case 2:
-                        echo "<script> alert('Bienvenido: $Usuario'); window.location= '../Views_publicar/Vista_historia.php'</script>";
+                        echo "<script> alert('Bienvenido: $Usuario'); window.location= '../Views/Public/Inicio.php'</script>";
                         break;
                     case 3:
-                        echo "<script> alert('Bienvenido: $Usuario'); window.location= '../Views_publicar/Vista_historia.php'</script>";
+                        echo "<script> alert('Bienvenido: $Usuario'); window.location= '../Views/Public/Inicio.php'</script>";
                         break;
                     default:
                         // Manejar otro rol si es necesario

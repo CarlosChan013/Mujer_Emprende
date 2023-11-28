@@ -8,9 +8,9 @@
 </head>
 <body>
 <!---------------------------- Header ----------------------------------->
-<?php include('../Include/Header.html'); ?>
+<?php include('../../Include/Header.html'); ?>
 <section >
-      <form action="../Registro_y_login/Login.php" method="POST">
+      <form action="../../Registro_y_login/Login.php" method="POST">
         <h1>Login</h1>
     
                 <!-- ingresar el email -->

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="../../css/Styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
@@ -13,28 +13,16 @@
 </head>
 <body>
 <!---------------------------------------- Navegación -------------------------------------------->
-<header>
-    <nav>
-        <ul>
-            <a style="font-family:'Holtwood One SC', serif; color: black;">Mujer Emprende</a>
-            <a href="index.html"> <img src="./Assets/Icons/Icono_home.png" alt="Inicio" style="left: 1020px; position: relative;"> </a>
-            <a href="./Views/Public/Mercado.php" style="text-decoration: none; font-family: 'Montserrat', sans-serif; color: black; font-weight: bold; left: 1030px; position: relative;">Mercado</a>
-            <a href="./Views/Public/Historias_exito.php" style="text-decoration: none; font-family: 'Montserrat', sans-serif; color: black; font-weight: bold; left: 1040px; position: relative;"> Historias de éxito </a>
-            <a href="./Views/Public/Cuenta.php" style="text-decoration: none; font-family: 'Montserrat', sans-serif; color: black; font-weight: bold; left: 1050px; position: relative;">Cuenta</a>
-            <a href="./Views/Public/Carrito.php" > <img src="./Assets/Icons/Icono_carrito.png" alt="Carrito" style="left: 1060px; position: relative;"> </a>
-        </ul>
-    </nav>
-</header>
+<?php include('../../Include/Login_header.html'); ?>
 <!--------------------------- Artesanias Perfecto para cada ocación ------------------------------>
 <section>
-    <img class="Fondo_inicio" src="./Assets/Img/Fondo_inicio.png" alt="Fondo_inicio">
-    <img class="Fondo_gris" src="./Assets/Img/Fondo_gris.png" alt=Fondo_gris">
+    <img class="Fondo_inicio" src="../../Assets/Img/Fondo_inicio.png" alt="Fondo_inicio">
     <button class="Comprar_artesania" ><a style="font-family: 'Montserrat', sans-serif;" href="./Views/Mercado.php">Comprar</a></button>
 </section>
 <!---------------------------------------- Historias -------------------------------------------->
 <section>
     <center> <h2 style="font-family:'Holtwood One SC', serif; letter-spacing: 2px;">Historias</h2></center>
-    <img class="Historias" src="./Assets/Img/Historias_inicio.png" alt="Historias">
+    <img class="Historias" src="../../Assets/Img/Historias_inicio.png" alt="Historias">
     <a style="font-family: 'Montserrat', sans-serif;" href="./Views/Historias_exito.php" class="Ver_mas">Ver mas...</a>
     <a style="font-family: 'Montserrat', sans-serif;" href="./Views/Historias_exito.php" class="Ver_mas_1">Ver mas...</a>
     <a style="font-family: 'Montserrat', sans-serif;" href="./Views/Historias_exito.php" class="Ver_mas_2">Ver mas...</a>
@@ -42,18 +30,18 @@
 <!---------------------------------------- Productos -------------------------------------------->
 <section>
     <center> <h2 style="font-family:'Holtwood One SC', serif; letter-spacing:2px ;">Productos</h2></center>
-    <img class="Estilo_guayabera" src="./Assets/Img/Producto_guayabera.png" alt="Guayabera">
+    <img class="Estilo_guayabera" src="../../Assets/Img/Producto_guayabera.png" alt="Guayabera">
     <button><a href="./Views/Mercado.php" style="font-family: 'Montserrat', sans-serif;">Comprar</a></button>
-    <img class="Estilo_huipil"  src="./Assets/Img/Producto_huipil.png" alt="Huipil">
+    <img class="Estilo_huipil"  src="../../Assets/Img/Producto_huipil.png" alt="Huipil">
     <button><a href="./Views/Mercado.php" style="font-family: 'Montserrat', sans-serif;">Comprar</a></button>
-    <img class="Estilo_rebozo"  src="./Assets/Img/Producto_rebozo.png" alt="Rebozo">
+    <img class="Estilo_rebozo"  src="../../Assets/Img/Producto_rebozo.png" alt="Rebozo">
     <button><a href="./Views/Mercado.php" style="font-family: 'Montserrat', sans-serif;">Comprar</a></button>
-    <img class="Estilo_sombrero" src="./Assets/Img/Producto_sombrero.png" alt="Sombrero">
+    <img class="Estilo_sombrero" src="../../Assets/Img/Producto_sombrero.png" alt="Sombrero">
     <button><a href="./Views/Mercado.php" style="font-family: 'Montserrat', sans-serif;">Comprar</a></button>
 <!---------------------------------------- Nosotros --------------------------------------------->
 </section>
     <div>
-    <img class="Estilo_nosotros" src="./Assets/Img/Nosotros.png" alt="Nosotros">
+    <img class="Estilo_nosotros" src="../../Assets/Img/Nosotros.png" alt="Nosotros">
     </div>
 <!----------------------------------------- Footer ---------------------------------------------->
 <footer >

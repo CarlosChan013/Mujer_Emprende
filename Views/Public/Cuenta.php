@@ -8,14 +8,14 @@
 </head>
 <body>
 <!---------------------------- Header ----------------------------------->
-<?php include('../Include/Header.html'); ?>
+<?php include('../../Include/Header.html'); ?>
     <section >
          <div >
               <div >
                    <div >
                    <h2>Bienvenid@s</h2>
                    <p>¿Tienes una cuenta? inicia sesion </p>
-                   <h3><a href="../Views/Login.php" class="cta">Iniciar sesión</a></h3>
+                   <h3><a href="../Public/Login.php" class="cta">Iniciar sesión</a></h3>
                    </div>
                </div>
          </div>
@@ -27,7 +27,7 @@
                    <div>
                     <h1>¿No tienes una cuenta?</h1>
                    <p class="cuenta-gratis">Es 100% gratis</p>
-                   <h3><a href="../Views/Registro.php">Registrarse</a></h3>
+                   <h3><a href="../Public/Registro.php">Registrarse</a></h3>
                    </div>
               </div>
            </div>
@@ -38,7 +38,7 @@
               <div>
                   <div> 
                     <h1>¿Quieres ofrecer tus productos y publicar historias?</h1>
-                    <h3><a href="../Views/Registro_proveedora.php">Registrate aqui</a></h3>
+                    <h3><a href="../Public/Registro_proveedora.php">Registrate aqui</a></h3>
                   </div>
               </div>
          </div>

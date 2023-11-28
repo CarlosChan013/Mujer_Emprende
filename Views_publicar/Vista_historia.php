@@ -22,9 +22,6 @@ if (!isset($_SESSION['id'])) {
 <header>
     <!---------------------------- Header ----------------------------------->
     <?php include('../Include/Header.html'); ?>
-    <form action="../cerrar_sesion.php" method="post">
-      <button type="submit" name="cerrar_sesion">Cerrar Sesión</button>
-    </form>
 </header>
 <body>
 <h1>Publicar Historia</h1>

@@ -1,10 +1,10 @@
 <?php
-include("../Conect.php");
+include("../../Conect.php");
 session_start();
 
 // Verificar si el usuario está autenticado
 if (!isset($_SESSION['id'])) {
-    header("Location: login.php"); // Redirigir a la página de inicio de sesión si no está autenticado
+    header("Location: ./Login.php"); // Redirigir a la página de inicio de sesión si no está autenticado
     exit();
 }
 
@@ -41,7 +41,7 @@ $Conexion->close();
     <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
     
     <title>Perfil</title>
-
+    <?php include('../../Include/Login_header.html'); ?>
     <style>
         body {
             display: flex;
@@ -83,6 +83,8 @@ $Conexion->close();
         <!-- Menú de opciones -->
         <div class="menu-item">Configuración</div>
         <div class="menu-item">Historial de Pedidos</div>
+        <form action="../../cerrar_sesion.php" method="post">
+      <button type="submit" name="cerrar_sesion">Cerrar Sesión</button>
         <button onclick="cerrarSesion()">Cerrar Sesión</button>
     </div>
 
