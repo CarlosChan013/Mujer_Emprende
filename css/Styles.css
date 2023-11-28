@@ -1,0 +1,188 @@
+/*-----------------------Diseño Inicio--------------------*/
+.Fondo_inicio {
+    height: 405px;
+    width: 1200px;
+    left: 200px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;  /* Para que este delante de Fondo gris*/
+}
+.Fondo_gris{
+    height: 420px;
+    width: 1665px;
+    left: 10px;
+    position: absolute;
+    margin-left: 10px;
+    margin-right: 10px;
+    right: 20px;
+    z-index: 1;  /* Para que este detras de Fondo_inicio */
+}
+button {
+    background-color: #E68989;
+    border-radius: 10%; /* Para hacer el borde circular */
+    border: 1px solid #E68989;
+    padding: 10px 15px; /* Ajusta el relleno según tus preferencias */
+    position: relative; /* Permite posicionar el botón de forma relativa */
+    top: -30px; /* Ajusta la posición vertical según tus necesidades */
+    margin-bottom: -30px; /* Compensa el espacio extra generado por el desplazamiento del botón */
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+.Comprar_artesania{
+    right: 300px;
+    z-index: 3;
+    bottom: 100px;
+    text-decoration: none;
+}
+.Ver_mas{
+    right: 370px;
+    bottom: 15px;
+}
+.Ver_mas_1{
+    right: 150px;
+    bottom: 15px;
+}
+.Ver_mas_2{
+    left: 50px;
+    bottom: 15px;
+}
+.Historias{
+    left: 400px; 
+    position: relative;
+}
+.Estilo_sombrero{
+    position: relative;
+    left: 390px;
+    
+}
+.Estilo_rebozo{
+    position: relative;
+    left: 320px;
+}
+.Estilo_huipil{
+    position: relative;
+    left: 240px;
+}
+.Estilo_guayabera{
+    position: relative;
+    left: 180px;
+}
+.Estilo_nosotros{
+    margin-top: 30px;
+    width: 1050px;
+    left: 300px;
+    position: relative;
+}
+/* Estilos para el pie de página (footer) */
+Footer {
+    background-color: #999BCC;
+}
+
+/* Estilos para el elemento h2 dentro del pie de página */
+Footer h2 {
+    color: white;
+}
+
+/* Estilos para el elemento p dentro del pie de página */
+Footer p {
+    color: white;
+}
+Footer h1{
+    color: white; 
+}
+.Estilo_dirrecion{
+    position: relative;
+    left: 200px;
+}
+.Estilo_dirrecion_p{
+    position: relative;
+    left: 200px;
+}
+.Estilo_numero_telefono{
+    position: relative;
+    left: 200px;
+}
+.Estilo_numero_telefono_p{
+    position: relative;
+    left: 200px;
+}
+.Estilo_correo{
+    position: relative;
+    left: 200px;
+}
+.Estilo_correo_p{
+    position: relative;
+    left: 200px;
+}
+/*-------------------------------------------------------------*/
+/*---------------------------Diseño mercado---------------------------*/
+.Fondo_mercado{
+    position: relative;
+    height: 405px;
+    width: 1200px;
+    left: 200px;
+}
+/*------------------Diseño Producto_detalles--------------------------*/
+        /* Agrega estilos según tus preferencias */
+        .product-card {
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .product-image {
+            max-height: 200px;
+            margin-bottom: 10px;
+        }
+
+        .buy-button {
+            background-color: #E68989;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comment-box {
+            border: 1px solid #000;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #fff;
+        }
+        .comments-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .comments-section .comment-card {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .comment-card-content {
+            margin-bottom: 10px;
+        }
+
+        .comment-options {
+            margin-top: 10px;
+        }
+
+        .like-button, .reply-button {
+            margin-right: 10px;
+        }
