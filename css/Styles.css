@@ -1,5 +1,3 @@
-
-
 /* Estilos base */
 * {
     margin: 0;
@@ -13,11 +11,12 @@ body, html {
     line-height: 1.6;
 }
 
+
+
 /* Estilos de la barra de navegación */
 nav {
     background-color: #ffffff;
     border-bottom: 1px solid #dddddd;
-    padding: 10px 0;
 }
 
 nav ul {
@@ -25,10 +24,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-nav ul li {
-    padding: 0 20px;
+    padding: 10px 0;
 }
 
 nav a {
@@ -36,32 +32,124 @@ nav a {
     color: #333333;
     font-weight: bold;
     font-size: 1rem;
+    margin: 0 20px;
 }
-
-/* Estilos de cabecera */
-header {
-    background: url('./Assets/Img/mujer emprende/inicio.jpg') no-repeat center center/cover;
-    color: #ffffff;
-    padding: 40px 0;
-}
-
+/* primer estilo para  */
+.banner-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Alinear el contenido del banner a la derecha */
+    align-items: center; /* Centrar el contenido del banner verticalmente */
+    overflow: hidden;
+    border-radius: 10px; /* Esquinas redondeadas */
+  }
+  
+  .banner-image {
+    width: 100%;
+    display: block; /* Esto asegurará que la imagen se muestre correctamente */
+  }
+  
+  .banner-text {
+    position: absolute;
+    right: 10%; /* Espacio desde el lado derecho */
+    bottom: 10%; /* Espacio desde la parte inferior */
+    color: white;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+    padding: 20px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    max-width: 350px; /* Ancho máximo del texto del banner */
+  }
+  
+  .banner-text h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem; /* Tamaño del título */
+  }
+  
+  .banner-text p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem; /* Tamaño del párrafo */
+  }
+  
+  .banner-price-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price {
+    font-size: 1.5rem; /* Tamaño del precio */
+    font-weight: bold;
+  }
+  
+  .boton-comprar {
+    display: inline-block;
+    background-color: #ff4500; /* Color de fondo del botón */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Esquinas redondeadas del botón */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .boton-comprar:hover {
+    background-color: darken(#ff4500, 10%);
+  }
+  
 /* Estilos de la sección 'inicio' */
 .inicio {
-    padding: 20px;
+    position: relative;
     text-align: center;
+    padding: 20px;
 }
 
 .imagen-fondo {
     width: 100%;
     height: auto;
+    display: block;
 }
+
+.banner-info {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    transform: translateY(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.banner-info h2 {
+    color: #E68989;
+    margin: 0 0 10px 0;
+}
+
+.banner-info p {
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.boton-comprar {
+    display: inline-block;
+    background-color: #E68989;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 /* Botón de Compra */
 .boton-comprar {
-    display: inline-block;
-    padding: 10px 20px;
+    display: block;
     background-color: #E68989;
     color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -69,163 +157,23 @@ header {
     font-weight: bold;
 }
 
-/* Estilos de la sección de historias y productos */
-.historias, .productos {
-    padding: 20px 0;
-}
-
-.historias h2, .productos h2 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    color: #333333;
-}
-
-/* Estilos de los artículos de historias y productos */
-.producto {
-    border: 1px solid #dddddd;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.producto img {
-    width: 100%;
-    display: block;
-}
-
-/* Sección Nosotros */
-.nosotros img {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-}
-
-/* Pie de página */
-footer {
-    background-color: #999BCC;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #ffffff;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Media queries para responsividad */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        padding: 10px 0;
-    }
-
-    header {
-        padding: 20px 0;
-    }
-
-    .boton-comprar {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .productos, .historias {
-        padding: 10px;
-    }
-}
-
-
-
-/* Estilos base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* Estilos de la barra de navegación */
-nav {
-    background-color: #ffffff;
-    border-bottom: 1px solid #dddddd;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo a {
-    font-family: 'Holtwood One SC', serif;
-    color: black;
-    text-decoration: none;
-    font-size: 1.5rem;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Espacio entre elementos de la lista */
-}
-
-.nav-list li {
-    padding: 0 10px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
-    transition: color 0.3s;
-}
-
-.nav-list a:hover {
-    color: #E68989;
-}
-
-.nav-list img {
-    width: 24px; /* Tamaño del icono */
-    height: auto;
-}
-
-/* Estilos de cabecera */
-header {
-    background: url('./Assets/Img/mujer emprende/inicio.jpg') no-repeat center center/cover;
-    color: #ffffff;
-    padding: 40px 0;
-}
-
 /* Resto de los estilos ... */
 
 /* Media queries para responsividad */
 @media (max-width: 768px) {
     /* Resto de los estilos responsivos ... */
-
-    .nav-list {
-        flex-direction: column;
-    }
-
-    .nav-list li {
-        padding: 10px 0;
+    .banner {
+        width: auto;
+        left: 10%;
+        right: 10%;
     }
 }
 
 @media (max-width: 480px) {
     /* Resto de los estilos responsivos ... */
+    .banner {
+        position: static;
+        transform: none;
+        margin-top: 20px;
+    }
 }
