@@ -169,3 +169,72 @@ nav a {
         width: 90%;
     }
 }
+
+
+
+
+footer {
+   background-color: #999BCC;   /* O el color que desees para el fondo */
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1.9cm;
+}
+
+.footer-top h1 {
+    font-size: 2rem; /* Tamaño grande para 'Contactanos' */
+    margin-bottom: 1.9cm; /* Salto de línea antes del contenido del footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 0 10px; /* Espacio horizontal para las secciones */
+    flex: 1; /* Distribución equitativa del espacio */
+}
+
+.footer-divider {
+    height: 100%;
+    width: 2px;
+    background-color: white; /* Líneas divisorias blancas */
+    margin: 0 20px; /* Espacio horizontal para las líneas divisorias */
+}
+
+.footer-bottom {
+    margin-top: 5cm; /* Salto de línea de 5 cm */
+    padding: 20px 0;
+}
+
+.conditions-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.conditions-link:hover {
+    color: #aaa; /* Cambio de color al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-divider {
+        display: none; /* Ocultar las líneas divisorias en pantallas pequeñas */
+    }
+    .footer-section {
+        margin-bottom: 20px; /* Espacio debajo de cada sección para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-top h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2cm; /* Menor salto de línea para pantallas muy pequeñas */
+    }
+}
