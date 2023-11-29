@@ -65,7 +65,7 @@
 
         /* Estilos para el footer */
         footer {
-            background-color: #333;
+            background-color: #999BCC;
             color: white;
             text-align: center;
             padding: 20px 0;
