@@ -1,188 +1,231 @@
-/*-----------------------Diseño Inicio--------------------*/
-.Fondo_inicio {
-    height: 405px;
-    width: 1200px;
-    left: 200px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 100px;
-    margin-right: 5px;
-    position: relative;
-    z-index: 2;  /* Para que este delante de Fondo gris*/
+
+
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.Fondo_gris{
-    height: 420px;
-    width: 1665px;
-    left: 10px;
-    position: absolute;
-    margin-left: 10px;
-    margin-right: 10px;
-    right: 20px;
-    z-index: 1;  /* Para que este detras de Fondo_inicio */
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
-button {
-    background-color: #E68989;
-    border-radius: 10%; /* Para hacer el borde circular */
-    border: 1px solid #E68989;
-    padding: 10px 15px; /* Ajusta el relleno según tus preferencias */
-    position: relative; /* Permite posicionar el botón de forma relativa */
-    top: -30px; /* Ajusta la posición vertical según tus necesidades */
-    margin-bottom: -30px; /* Compensa el espacio extra generado por el desplazamiento del botón */
-    
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 0;
 }
-a{
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+nav a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
+    color: #333333;
     font-weight: bold;
-    position: relative;
+    font-size: 1rem;
 }
-.Comprar_artesania{
-    right: 300px;
-    z-index: 3;
-    bottom: 100px;
+
+/* Estilos de cabecera */
+header {
+    background: url('./Assets/Img/mujer emprende/inicio.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+/* Estilos de la sección 'inicio' */
+.inicio {
+    padding: 20px;
+    text-align: center;
+}
+
+.imagen-fondo {
+    width: 100%;
+    height: auto;
+}
+
+/* Botón de Compra */
+.boton-comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E68989;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     text-decoration: none;
+    font-weight: bold;
 }
-.Ver_mas{
-    right: 370px;
-    bottom: 15px;
+
+/* Estilos de la sección de historias y productos */
+.historias, .productos {
+    padding: 20px 0;
 }
-.Ver_mas_1{
-    right: 150px;
-    bottom: 15px;
+
+.historias h2, .productos h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333333;
 }
-.Ver_mas_2{
-    left: 50px;
-    bottom: 15px;
+
+/* Estilos de los artículos de historias y productos */
+.producto {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
-.Historias{
-    left: 400px; 
-    position: relative;
+
+.producto img {
+    width: 100%;
+    display: block;
 }
-.Estilo_sombrero{
-    position: relative;
-    left: 390px;
-    
+
+/* Sección Nosotros */
+.nosotros img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
 }
-.Estilo_rebozo{
-    position: relative;
-    left: 320px;
-}
-.Estilo_huipil{
-    position: relative;
-    left: 240px;
-}
-.Estilo_guayabera{
-    position: relative;
-    left: 180px;
-}
-.Estilo_nosotros{
-    margin-top: 30px;
-    width: 1050px;
-    left: 300px;
-    position: relative;
-}
-/* Estilos para el pie de página (footer) */
-Footer {
+
+/* Pie de página */
+footer {
     background-color: #999BCC;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
 }
 
-/* Estilos para el elemento h2 dentro del pie de página */
-Footer h2 {
-    color: white;
+footer a {
+    color: #ffffff;
 }
 
-/* Estilos para el elemento p dentro del pie de página */
-Footer p {
-    color: white;
+footer a:hover {
+    text-decoration: underline;
 }
-Footer h1{
-    color: white; 
-}
-.Estilo_dirrecion{
-    position: relative;
-    left: 200px;
-}
-.Estilo_dirrecion_p{
-    position: relative;
-    left: 200px;
-}
-.Estilo_numero_telefono{
-    position: relative;
-    left: 200px;
-}
-.Estilo_numero_telefono_p{
-    position: relative;
-    left: 200px;
-}
-.Estilo_correo{
-    position: relative;
-    left: 200px;
-}
-.Estilo_correo_p{
-    position: relative;
-    left: 200px;
-}
-/*-------------------------------------------------------------*/
-/*---------------------------Diseño mercado---------------------------*/
-.Fondo_mercado{
-    position: relative;
-    height: 405px;
-    width: 1200px;
-    left: 200px;
-}
-/*------------------Diseño Producto_detalles--------------------------*/
-        /* Agrega estilos según tus preferencias */
-        .product-card {
-            border: 1px solid #000;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
-            width: 300px;
-            text-align: center;
-            background-color: #fff;
-        }
 
-        .product-image {
-            max-height: 200px;
-            margin-bottom: 10px;
-        }
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
 
-        .buy-button {
-            background-color: #E68989;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    nav ul li {
+        padding: 10px 0;
+    }
 
-        .comment-box {
-            border: 1px solid #000;
-            border-radius: 10px;
-            margin: 10px;
-            padding: 10px;
-            background-color: #fff;
-        }
-        .comments-section ul {
-            list-style: none;
-            padding: 0;
-        }
+    header {
+        padding: 20px 0;
+    }
 
-        .comments-section .comment-card {
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            padding: 15px;
-        }
+    .boton-comprar {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
 
-        .comment-card-content {
-            margin-bottom: 10px;
-        }
+@media (max-width: 480px) {
+    .productos, .historias {
+        padding: 10px;
+    }
+}
 
-        .comment-options {
-            margin-top: 10px;
-        }
 
-        .like-button, .reply-button {
-            margin-right: 10px;
-        }
+
+/* Estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-family: 'Holtwood One SC', serif;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre elementos de la lista */
+}
+
+.nav-list li {
+    padding: 0 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #E68989;
+}
+
+.nav-list img {
+    width: 24px; /* Tamaño del icono */
+    height: auto;
+}
+
+/* Estilos de cabecera */
+header {
+    background: url('./Assets/Img/mujer emprende/inicio.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+/* Resto de los estilos ... */
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    /* Resto de los estilos responsivos ... */
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Resto de los estilos responsivos ... */
+}

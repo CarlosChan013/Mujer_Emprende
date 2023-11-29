@@ -68,3 +68,27 @@ body, html {
     }
   }
   
+  :root {
+    --primary-color: #E68989;
+    --background-color: #999BCC;
+    --text-color: black;
+    --footer-background-color: #999BCC;
+    --footer-text-color: white;
+}
+
+.buy-button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+body {
+    font-size: 100%; /* 16px */
+}
+.product-card {
+    flex: 1 1 calc(33.333% - 20px); /* Ajusta según la disposición deseada */
+}
+@media (max-width: 480px) {
+    /* Estilos para pantallas muy pequeñas */
+}
+
+@media (min-width: 1024px) {
+    /* Estilos para pantallas grandes */
+}
