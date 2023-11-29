@@ -53,128 +53,12 @@ nav a {
 }
 
 /* Estilos de la sección 'inicio' */
-/* Estilos de la sección 'inicio' */
 
-.banner-container {
-    height: 75vh; /* Ajusta la altura del contenedor del banner al 65% de la altura de la ventana */
-    overflow: hidden; /* Esconde cualquier contenido que se desborde del contenedor */
-    position: relative; /* Agrega esta línea */
-}
+/* 
 
-.banner-image {
-    width: 100%;
-    height: 100%; /* Asegura que la imagen cubra todo el contenedor */
-    object-fit: cover; /* Asegura que la imagen cubra todo el contenedor sin distorsionarse */
-    display: block; /* Esto asegurará que la imagen se muestre correctamente */
-}
-
-.banner-text {
-    position: absolute;
-    right: 10%; /* Espacio desde el lado derecho */
-    bottom: 10%; /* Espacio desde la parte inferior */
-    color: white;
-    text-align: right;
-    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
-    padding: 20px;
-    border-radius: 10px; /* Esquinas redondeadas */
-    max-width: 350px; /* Ancho máximo del texto del banner */
-    border: 2px solid white; /* Agrega un borde blanco alrededor del banner */
-}
-
-.banner-text h2 {
-    margin-bottom: 0.5rem;
-    font-size: 3rem; /* Aumenta el tamaño del título */
-}
-
-.banner-text p {
-    margin-bottom: 1rem;
-    font-size: 1.5rem; /* Aumenta el tamaño del párrafo */
-}
-
-.price {
-    font-size: 2rem; /* Aumenta el tamaño del precio */
-    font-weight: bold;
-}
-
-/* Botón de Compra */
-.boton-comprar {
-    display: block;
-    background-color: #E68989;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: bold;
-}
-/* Estilos para la sección de historias */
-/* Estilos para la sección de historias */
-.historias h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.card {
-    width: 300px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.card-body {
-    padding: 15px;
-    text-align: center;
-}
-
-.boton-ver-mas {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    background-color: #E68989;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Media queries para responsividad */
-@media (max-width: 768px) {
-    .card-container {
-        justify-content: center;
-    }
-    .card {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        width: 90%;
-    }
-}
-
-
-
-
+*/
 footer {
-   background-color: #999BCC;   /* O el color que desees para el fondo */
+    background-color: #999BCC; /* Color de fondo del footer */
     color: white;
     padding: 20px 0;
     font-size: 0.9rem;
@@ -183,30 +67,33 @@ footer {
 }
 
 .footer-top h1 {
-    font-size: 2rem; /* Tamaño grande para 'Contactanos' */
-    margin-bottom: 1.9cm; /* Salto de línea antes del contenido del footer */
+    font-size: 2rem; /* Tamaño del título 'Contactanos' */
+    margin-bottom: 1.9cm; /* Espacio después del título */
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
     flex-wrap: wrap;
+    padding: 0 5%; /* Padding horizontal para no pegarse a los bordes */
 }
 
 .footer-section {
     margin: 0 10px; /* Espacio horizontal para las secciones */
     flex: 1; /* Distribución equitativa del espacio */
+    min-width: 140px; /* Mínimo ancho para las secciones */
 }
 
 .footer-divider {
-    height: 100%;
+    height: 50px; /* Altura de la línea divisoria */
     width: 2px;
-    background-color: white; /* Líneas divisorias blancas */
-    margin: 0 20px; /* Espacio horizontal para las líneas divisorias */
+    background-color: white; /* Color de la línea */
+    margin: 0 20px; /* Espacio alrededor de las líneas */
+    align-self: center; /* Alinea las líneas al centro verticalmente */
 }
 
 .footer-bottom {
-    margin-top: 5cm; /* Salto de línea de 5 cm */
+    margin-top: 5cm; /* Espacio antes del copyright */
     padding: 20px 0;
 }
 
@@ -224,17 +111,26 @@ footer {
     .footer-content {
         flex-direction: column;
     }
+
     .footer-divider {
-        display: none; /* Ocultar las líneas divisorias en pantallas pequeñas */
+        display: none; /* Oculta las líneas divisorias en pantallas pequeñas */
     }
+
     .footer-section {
         margin-bottom: 20px; /* Espacio debajo de cada sección para pantallas pequeñas */
+    }
+
+    .footer-bottom {
+        margin-top: 2cm; /* Espacio reducido para pantallas pequeñas */
     }
 }
 
 @media (max-width: 480px) {
     .footer-top h1 {
         font-size: 1.5rem;
-        margin-bottom: 2cm; /* Menor salto de línea para pantallas muy pequeñas */
+    }
+
+    .footer-bottom {
+        margin-top: 1cm; /* Espacio más reducido para pantallas muy pequeñas */
     }
 }
