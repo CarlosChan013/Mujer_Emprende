@@ -16,10 +16,10 @@ session_start();
 // Verificar si el usuario está logeado
 if (isset($_SESSION['id'])) {
     // Mostrar el header para usuarios logeados
-    include('../../Include/Login_header.html');
+    include('../../include/Login_header.html');
 } else {
     // Mostrar el header normal para usuarios no logeados
-    include('../../Include/Header.html');
+    include('../../include/Header.html');
 }
 ?>
 
